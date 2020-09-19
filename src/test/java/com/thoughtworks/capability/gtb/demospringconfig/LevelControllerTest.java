@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @AutoConfigureMockMvc
 //@ActiveProfiles("test")
-@TestPropertySource(locations = "/lication-test.properties")
+@TestPropertySource(properties = {"levelNumber=4"})
 class LevelControllerTest {
     @Autowired
     private MockMvc mockMvc;
